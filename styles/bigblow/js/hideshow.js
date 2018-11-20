@@ -297,7 +297,8 @@ function hsAddReviewPanels() {
             $(this).prepend('<div class="hsReviewPanel hsUnselectable" onclick="hsReviewTaskNext()">'
                             + 'Press r or click here<br>'
                             + 'to review ' + nbItems + ' tasks<br>'
-                            + '(out of ' +  nbReviewTotalTasks + ' tasks)</div>');
+                            + '(out of ' +  nbReviewTotalTasks + ' tasks)<br>'
+                            + 'Press q to Quit</div>');
         }
     });
 }
@@ -310,7 +311,8 @@ function hsAddReviewingPanels() {
                             + '(out of ' +  nbReviewTotalTasks + ' tasks)<br>'
                             + 'Shortcuts: '
                             + '<span class="hsReviewButton" onclick="hsReviewTaskNext()">r (next)</span> - '
-                            + '<span class="hsReviewButton" onclick="hsReviewTaskPrev()">R (previous)</span>'
+                            + '<span class="hsReviewButton" onclick="hsReviewTaskPrev()">R (previous)</span> - '
+                            + '<span class="hsReviewButton" onclick="hsReviewTaskPrev()">q (quit)</span>'
                             + '</div>');
         }
         else {
@@ -318,7 +320,8 @@ function hsAddReviewingPanels() {
                             + '(out of ' +  nbReviewTotalTasks + ' tasks)<br>'
                             + 'Shortcuts: '
                             + '<span class="hsReviewButton" onclick="hsReviewTaskNext()">r (next)</span> - '
-                            + '<span class="hsReviewButton" onclick="hsReviewTaskPrev()">R (previous)</span>'
+                            + '<span class="hsReviewButton" onclick="hsReviewTaskPrev()">R (previous)</span> - '
+                            + '<span class="hsReviewButton" onclick="hsReviewTaskPrev()">q (quit)</span>'
                             + '</div>');
         }
     });
